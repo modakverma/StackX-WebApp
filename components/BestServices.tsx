@@ -69,7 +69,7 @@ const BestServices = () => {
         </div>
        </div>
      <img 
-      src="https://s3-alpha-sig.figma.com/img/7773/0348/48cf07a01e3784d2543b128352924684?Expires=1694390400&Signature=gyaIoK1uA13PFwzPl9fD04Mfv8VWqWavZTLmm51zVj09s12rUXjgOQRbBcKQspHFDzA82~-T-0UhjumsIWfq0HSSjHloFhgfEe9YSzc5jBOc~tGFXY6TrqJ7fpUHiarvzdoGCExbPtCC9iAvOvSYi7FpvshYYtk72psdSzg5pQ~octa-Uh2~0TDy2roeCbnNb3JJk62TrVYJejfwjiIhI6yP1OCYKv4SfCJPRKbHVq~6mHyOvanpf6HS5hjFOing2fy6eKKRrs3AIBjZhLAH0mFAAgysww7YbR9VF0X380X9beC-rVrtjfjyZc~Dz7TJLZjkG0zN9XuI4UUIIJ0CZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt=""
+      src="bestservice.gif" alt=""
       className="
       w-full
       transition"
