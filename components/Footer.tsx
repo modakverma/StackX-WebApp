@@ -1,5 +1,10 @@
-const Footer = () => {
+interface FooterProps{
+  href:string
+}
 
+const Footer:React.FC<FooterProps> = ({
+  href
+}) => {
     const arr= [
       {
         count:'10+',
@@ -14,6 +19,34 @@ const Footer = () => {
         description:'Projects \nCompleted',
       },
     ];
+
+  const teamArr=[
+    {
+      name:"Sahil Negi",
+      role:"App Developer,DevOps Engineer",
+      img:"/aboutImg/person1.png"
+    },
+    {
+      name:"Nikshit Sharma",
+      role:"App Developer",
+      img:"/aboutImg/person2.png"
+    },
+    {
+      name:"Modak Verma",
+      role:"App Developer & Web Developer",
+      img:"/aboutImg/person3.png"
+    },
+    {
+      name:"Aayush Sood",
+      role:"App Developer",
+      img:"/aboutImg/person4.png"
+    },
+    {
+      name:"Abhishek Sharma",
+      role:"Tech Lead",
+      img:"/aboutImg/person5.png"
+    },
+  ]
   return (
     <div>
       <div className="p-10
@@ -49,7 +82,9 @@ const Footer = () => {
       </div>
 
 
-      <div className="flex
+      {
+        href==="home"?
+        <div className="flex
        items-center 
        flex-row
        justify-between
@@ -126,7 +161,6 @@ const Footer = () => {
                    transition
                    delay-0
                    duration-[2.8s]
-
                    ">
                   <svg className="
                     absolute
@@ -136,7 +170,51 @@ const Footer = () => {
                </div>
             ))
         }
+      </div>:
+      <div className="flex 
+      flex-col
+      px-[70px]
+      py-[84px]
+      font-bold
+      text-white
+      text-5xl
+      items-center
+      ">
+         <h1 className="pb-[10px]">
+           The People
+         </h1>
+         <p className="font-extralight
+         pb-[100px]
+         ">That Make It Happen.</p>
+
+         <div className="
+         grid
+         grid-cols-3
+         gap-[80px]
+         items-center
+         text-center
+         ">
+           {
+           teamArr.map((item)=>(
+             <div className="flex
+             flex-col
+             gap-[10px]
+             items-center
+             cursor-pointer
+             grayscale
+             hover:grayscale-0
+             transition
+             duration-[1s]
+             ">
+               <img src={item.img} alt="img" />
+               <h1 className="text-xl">{item.name}</h1>
+               <p className="text-base  font-extralight">{item.role}</p>
+             </div>
+           ))
+           }
+         </div>
       </div>
+      }
 
       <div className="
       flex

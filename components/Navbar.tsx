@@ -40,7 +40,7 @@ const Navbar: React.FC<NavProps> = ({ children }) => {
     return (
         <div
         className='bg-[#202020]'> <div className='
-           p-4
+           p-1
            pr-8
            flex
            flex-row

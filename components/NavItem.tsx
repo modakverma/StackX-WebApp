@@ -3,7 +3,7 @@ import { IconType } from "react-icons";
 import {twMerge} from "tailwind-merge";
 
 interface NavbarItemProps{
-  icon:IconType,
+  icon:IconType;
   label:string;
   active?:boolean;
   href:string;
@@ -22,7 +22,7 @@ const SidebarItem:React.FC<NavbarItemProps> = ({
     flex 
     flex-row
     items-center
-    text-md
+    text-base
     cursor-pointer
     hover:text-blue-500
     transition

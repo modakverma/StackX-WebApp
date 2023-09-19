@@ -58,7 +58,7 @@ export default function Home() {
    <CraftingSection/>
    <Showcase/>
    <CompanyBanner/>
-   <Footer/>
+   <Footer href="home"/>
    </>
   )
 }

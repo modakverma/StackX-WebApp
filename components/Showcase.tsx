@@ -43,7 +43,7 @@ const Showcase = () => {
         h-92
         group-hover:scale-[1]
         hover:!scale-[1.7]
-transition
+        transition
         ">
             <img className='
       object-cover 
