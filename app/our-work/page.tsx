@@ -1,3 +1,7 @@
+"use client"
+
+import { useRouter } from "next/navigation";
+
 interface OurWorkProps {
   children: React.ReactNode;
 }
@@ -5,6 +9,8 @@ interface OurWorkProps {
 const page:React.FC<OurWorkProps> = ({
   children
 }) => {
+
+  const router = useRouter();
   return (
 //     <div className="
 //     rotate-180
@@ -76,7 +82,13 @@ px-[30px]
    px-[26px]
    rounded-3xl
    font-light
-   '>
+   '
+   onClick={
+    ()=>{
+      router.push('loco-tik')
+    }
+ }
+   >
      READ MORE
    </button>
  </div>
@@ -111,7 +123,13 @@ px-[30px]
     </span>
     </div>
    </div>
-   <button className='absolute
+   <button 
+    onClick={
+      ()=>{
+        router.push('/')
+      }
+   }
+   className='absolute
    right-[20px]
    bottom-[25px]
    bg-[#016CEC]
@@ -157,7 +175,13 @@ px-[30px]
     </div>
    </div>
 
-   <button className='absolute
+   <button 
+   onClick={
+      ()=>{
+        router.push('/')
+      }
+   }
+   className='absolute
    right-[20px]
    bottom-[25px]
    bg-[#016CEC]

@@ -1,6 +1,10 @@
-import React from 'react'
+"use client"
+
+import { useRouter } from "next/navigation"
 
 const page = () => {
+  const router = useRouter();
+
   return (
     <div className='
     grid
@@ -47,7 +51,13 @@ const page = () => {
         </div>
        </div>
 
-       <button className='absolute
+       <button 
+        onClick={
+          ()=>{
+            router.push('/loco-tik')
+          }
+       }
+       className='absolute
        right-[20px]
        bottom-[25px]
        bg-[#016CEC]
