@@ -1,76 +1,81 @@
 import ServiceBlock from "@/components/about/ServiceBlock"
-import Footer from "@/components/Footer"
+import Marquee from "@/components/common/Marquee"
+import Footer from "@/components/common/Footer"
+import PageBannerImg from "@/components/common/PageBannerImg"
 
-
-const ServiceBlockData = {
-   data:[
-      {
-          heading:"App Dev",
-          description:"Our App Development Service brings your vision to life with cutting-edge technology and unmatched creativity. Elevate your brand with us today.",
-          imgUrl:"/aboutImg/Union.svg"
-      },
-      {
-          heading:"Web Dev",
-          description:"Elevate Your Online Presence with Our Web Development Service. We turn concepts into captivating, user-friendly websites. Join us in shaping your digital footprint.",
-          imgUrl:"/aboutImg/Union2.svg"
-      },
-      {
-          heading:"UI/UX",
-          description:"Elevate User Experiences with Our UI/UX Service. We blend design and functionality seamlessly, ensuring your digital products are intuitive, engaging, and unforgettable.",
-          imgUrl:"/aboutImg/Union3.svg"
-      },
-      {
-          heading:"SMM",
-          description:"Boost Your Brand's Presence with Our Social Media Marketing Service. Our experts curate engaging content, spark conversations, and drive growth across platforms.",
-          imgUrl:"/aboutImg/Union4.svg"
-      },
-      
-   ]
-}
 
 const AboutUs = () => {
+
+
+  const ServiceBlockData = {
+
+    data:[
+       {
+           heading:"App Dev",
+           description:"Our App Development Service brings your vision to life with cutting-edge technology and unmatched creativity. Elevate your brand with us today.",
+           imgUrl:"/aboutImg/Union.svg"
+       },
+       {
+           heading:"Web Dev",
+           description:"Elevate Your Online Presence with Our Web Development Service. We turn concepts into captivating, user-friendly websites. Join us in shaping your digital footprint.",
+           imgUrl:"/aboutImg/Union2.svg"
+       },
+       {
+           heading:"UI/UX",
+           description:"Elevate User Experiences with Our UI/UX Service. We blend design and functionality seamlessly, ensuring your digital products are intuitive, engaging, and unforgettable.",
+           imgUrl:"/aboutImg/Union3.svg"
+       },
+       {
+           heading:"SMM",
+           description:"Boost Your Brand's Presence with Our Social Media Marketing Service. Our experts curate engaging content, spark conversations, and drive growth across platforms.",
+           imgUrl:"/aboutImg/Union4.svg"
+       },
+       
+    ]
+ }
+
+
+  const teamArr=[
+    {
+      name:"Sahil Negi",
+      role:"App Developer,DevOps Engineer",
+      img:"/aboutImg/person1.png"
+    },
+    {
+      name:"Nikshit Sharma",
+      role:"App Developer",
+      img:"/aboutImg/person2.png"
+    },
+    {
+      name:"Modak Verma",
+      role:"App Developer & Web Developer",
+      img:"/aboutImg/person3.png"
+    },
+    {
+      name:"Aayush Sood",
+      role:"App Developer",
+      img:"/aboutImg/person4.png"
+    },
+    {
+      name:"Abhishek Sharma",
+      role:"Tech Lead",
+      img:"/aboutImg/person5.png"
+    },
+  ]
+
+
   return (
     <div className="h-full">
       <div className="flex flex-col">
-        <div className=" bg-gradient-to-r
-        h-96
-        w-full
-        bg-cover
-        bg-center
-        relative
-        bg-gradient-to-r 
-        from-black
-        " >
-        <img src="/About-faded.png" alt="img" className="absolute 
-        object-cover
-        w-full
-        h-full
-        mix-blend-overlay
-        "/>
-        <h1 className="
-        translate-x-1/2	
-        translate-y-1/3	
-        right-1/2
-        absolute
-        w-full
-        h-full
-        text-center
-        text-white
-        text-8xl
-        font-light
-        ">
-          About <span className="
-          cursor-pointer
-          font-bold
-          hover:text-[#016CEC]
-          transition
-          duration-500
-          ">Us</span>
-        </h1>
-        </div>
+
+        {/* ====== page-image ========= */}
+
+        <PageBannerImg imgUrl="/AboutImg/About-faded.png" title="About Us"/>
+
+        {/* =========================== */}
 
        <div className="bg-white
-       py-[30px]
+       py-[45px]
        px-[20px]
        flex
        flex-row
@@ -90,7 +95,7 @@ const AboutUs = () => {
 
           <div className="
           font-extralight
-          text-2xl
+          text-3xl
           ">
             Forging Futures, One Line Of Code At A Time
           </div>
@@ -117,7 +122,7 @@ const AboutUs = () => {
         w-full
         bg-red
         grid 
-        gap-x-60
+        gap-x-32
         gap-y-10
         grid-cols-3 
         grid-rows-2">
@@ -129,20 +134,21 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* ==== Marquee ==== */}
+      {/*======= Marquee ====== */}
 
-     
+      <Marquee/>
+
 
       {/* ==== Build together ====  */}
+
       <div className="
       grid
       grid-cols-2
-      gap-x-[70px]
       pt-[74px]
-      pb-[244px]
+      pb-[120px]
       pl-[33px]
       ">
-        <div className="w-full
+        <div className="w-5/6
         flex
         flex-col
         gap-[60px]
@@ -265,10 +271,91 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <Footer href="about"/>
-     
+
+{/*===== OUR-TEAM======  */}
+
+      <div className="p-10
+      pt-20
+      pb-20
+      bg-white
+      flex
+      flex-row
+      items-center
+      justify-between
+      ">
+          <div>
+              <span className="
+              text-6xl
+              font-extralight
+              ">Our</span>
+              <span className="
+              pl-[10px]
+              text-6xl
+              font-bold
+              ">Team</span>
+          </div>
+
+          <div className="
+          w-1/2
+          text-2xl 
+          font-extralight
+          ">
+              <span>
+                  <span className="font-semibold" >Meet Our Exceptional Team: </span>
+                  Passionate innovators, tech enthusiasts, and creative minds. We're the driving force behind StackX Solutions, dedicated to turning your digital dreams into reality. Together, we <span className="font-semibold">redefine possibilities and create digital wonders</span>
+              </span>
+          </div>
+      </div>
+
+
+
+  <div className="flex 
+ flex-col
+ px-[70px]
+ py-[84px]
+ font-bold
+ text-white
+ text-5xl
+ items-center
+ ">
+    <h1 className="pb-[10px]">
+      The People
+    </h1>
+    <p className="font-extralight
+    pb-[100px]
+    ">That Make It Happen.</p>
+
+    <div className="
+    grid
+    grid-cols-3
+    gap-[80px]
+    items-center
+    text-center
+    ">
+     {
+     teamArr.map((item)=>(
+       <div className="flex
+       flex-col
+       gap-[10px]
+       items-center
+       cursor-pointer
+       grayscale
+       hover:grayscale-0
+       transition
+       duration-[1s]
+       ">
+         <img src={item.img} alt="img"/>
+         <h1 className="text-xl">{item.name}</h1>
+         <p className="text-base  font-extralight">{item.role}</p>
+       </div>
+     ))
+     }
+   </div>
+</div>
+
+      <Footer/>
     </div>
-  )
+)
 }
 
 export default AboutUs

@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import { HiHome } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
 import NavItem from './NavItem'
+import Link from "next/link";
 
 interface NavProps {
     children: React.ReactNode;
@@ -15,8 +16,8 @@ const Navbar: React.FC<NavProps> = ({ children }) => {
         {
             icon: HiHome,
             label: 'Our Work',
-            active: pathname === '/',
-            href: '/',
+            active: pathname === '/our-work',
+            href: '/our-work',
         },
         {
             icon: BiSearch,
@@ -46,12 +47,13 @@ const Navbar: React.FC<NavProps> = ({ children }) => {
            flex-row
            justify-between
            '>
-         <div className='
+    <Link href='/'>
+    <div className='
         flex
         text-white
         items-center
         '>
-            <img src="Logo-transparent.svg" alt="Logo" />
+            <img src="/Logo-transparent.svg" alt="Logoz" />
             <div className='flex
          gap-2
          text-xl
@@ -63,6 +65,7 @@ const Navbar: React.FC<NavProps> = ({ children }) => {
             <span>SOLUTIONS</span>
             </div>
         </div>
+    </Link>
    <div className="
     text-sm
     flex

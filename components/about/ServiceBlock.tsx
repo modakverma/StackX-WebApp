@@ -15,12 +15,14 @@ const ServiceBlock:React.FC<ServiceBlockProps> = ({
     justify-end
     bg-red
     flex-col
-    gap-[20px]
-    w-[150px]
+    gap-[30px]
     ">
-      <img src={imgUrl} alt="img" className="
+      <img src={imgUrl} 
+      alt="img" 
+      id='service-img'
+      className="
       fill-white
-      w-3/4
+      w-1/2
       " />
       <h1 className="
       font-medium
@@ -34,12 +36,18 @@ const ServiceBlock:React.FC<ServiceBlockProps> = ({
       ">
         {description}
       </p>
-      <span className="w-32 bg-[#016CEC] flex flex-row text-white p-3 text-sm font-light 
-                 cursor-pointer
-                 transition
-                 hover:bg-blue-600">
+      <span className="
+      w-32 
+      bg-[#016CEC] 
+      flex flex-row 
+      text-white p-3 
+      text-sm font-light 
+      cursor-pointer
+      transition
+      hover:bg-blue-600     
+      ">
                  <button>Get a Quote</button>
-                 <img src="right-arrow.svg" alt="" />
+                 <img src="right-arrow.svg" alt="img" />
                  </span>
     </div>
   )

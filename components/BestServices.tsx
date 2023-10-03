@@ -76,14 +76,27 @@ const BestServices = () => {
       />
      </div>
 
-      <div className=" absolute h-screen bottom-0 left-3/4 
+      <div className=" absolute
+       2xl:h-[800px] 
+       xl:h-[700px]
+       lg:h-[600px]
+       md:h-[500px] 
+       sm:h-[400px]
+       h-[350px]
+       left-3/4 
+       lg:right-0
+       bottom-0 
       ">
       <div className="flex 
       flex-col 
       items-center 
-      w-72 
       pt-10 
-      h-full 
+      2xl:h-[800px] 
+       xl:h-[700px]
+       lg:h-[600px]
+       md:h-[500px] 
+       sm:h-[400px]
+       h-[350px]
       realtive 
       bg-white 
       flex 
@@ -93,6 +106,9 @@ const BestServices = () => {
        hover:scale-[1.02]
        transition
        -translate-y-3/4
+       lg:w-full
+       sm:w-full
+       w-5/6
        " />
       <div className="overflow-auto 
       w-full 
@@ -103,9 +119,11 @@ const BestServices = () => {
       flex 
       flex-col 
       items-center 
-      gap-3 ">
-          <span>
-           <img src="slider.svg" alt="" />
+      gap-3
+      h-3/4
+      ">
+          <span className="h-4/5">
+           <img src="slider.svg" alt="slider" className="h-full" />
            </span>
           <span className="cursor-pointer 
           transition 
@@ -116,10 +134,10 @@ const BestServices = () => {
           rounded-3xl 
           w-8 
           h-8">
-            <img src="down-arrow.png" alt="" />
+            <img src="down-arrow.png" alt="arrow" />
           </span>
        </div>
-       <span className="mt-8 text-2xl font-medium" >
+       <span className="mt-8 h-1/5 text-2xl font-medium" >
          Explore More
        </span>
        <p className="pt-4 font-light text-[#888] ">Scroll Down</p>

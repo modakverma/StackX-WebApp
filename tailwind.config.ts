@@ -13,18 +13,32 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
       keyframes: {
         'bouncey': {
           '0%, 100%': { transform: 'translateY(10%)' },
           '50%': { transform: 'translateY(0)' }
-        }
+        },
+        'marquee':{
+          '0%':{transform: 'translateX(0%)'},
+          '100%': { transform: 'translateX(-105%)' }
+        },
+        'marquee2':{
+          '0%':{transform: 'translateX(100%)'},
+          '100%': { transform: 'translateX(0%)' }
+        },
       },
       
       animation:{
-        'bouncey':'bouncey 1.8s ease-in-out infinite'
-      }
+        'bouncey':'bouncey 1.8s ease-in-out infinite',
+        'marquee': 'marquee 10s linear infinite',
+        'marquee2': 'marquee 10s linear infinite'
+      },
+      
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 }
 export default config

@@ -45,12 +45,29 @@ const Showcase = () => {
         hover:!scale-[1.7]
         transition
         ">
+          <div className='
+          absolute
+          right-[10px]
+          bottom-[6px]
+          bg-blue-500
+          text-center
+          rounded-2xl
+          text-white
+          py-[4px]
+          px-[8px]
+          font-light
+          text-xs
+          '>
+            <button>
+              Read More
+            </button>
+          </div>
             <img className='
       object-cover 
       z-30
       left-0
       cursor-pointer
-      ' src="frame1.svg" alt="" />
+      ' src="frame1.svg" alt="img" />
           </div>
 
           <div className="
@@ -64,13 +81,14 @@ left-1/4
  hover:z-30
 transition
 ">
-            <img className='
+      <img className='
       object-cover
       cursor-pointer
-      '  src="rect-2.svg" alt="" />
-          </div>
+      '  
+      src="rect-2.svg" alt="img" />
+    </div>
 
-          <div className="
+    <div className="
 z-10
 scale-[1.6]
 hover:z-30
@@ -85,7 +103,7 @@ transition
       z-10
       object-cover
       cursor-pointer
-      '  src="rect-3.svg" alt="" />
+      '  src="rect-3.svg" alt="img" />
           </div>
 
           <div className=" 
@@ -101,7 +119,7 @@ transition
             <img className='
       cursor-pointer
       z-0
-      '  src="rect-4.svg" alt="" />
+      '  src="rect-4.svg" alt="img" />
           </div>
         </div>
 
